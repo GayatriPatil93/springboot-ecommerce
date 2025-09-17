@@ -4,10 +4,7 @@ package com.springboot.ecom.controller;
 import com.springboot.ecom.model.Product;
 import com.springboot.ecom.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,7 +16,7 @@ public class ProductController {
     private ProductRepository productRepository;
 
     @PostMapping
-    public Product addproduct(Product product) {
+    public Product addproduct(@RequestBody Product product) {
         return productRepository.save(product);
     }
 
