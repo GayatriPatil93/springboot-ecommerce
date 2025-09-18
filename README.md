@@ -1,1 +1,1 @@
-<h3> This is simple practice project</h3>
+<h3> This is a simple practice project</h3>
