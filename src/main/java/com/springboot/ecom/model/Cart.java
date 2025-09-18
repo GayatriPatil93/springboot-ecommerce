@@ -19,6 +19,10 @@ public class Cart {
 
     private Integer quantity;
 
+   public Cart(){
+
+   }
+
     public Cart(Long id, User user, Product product, Integer quantity) {
         this.id = id;
         this.user = user;
